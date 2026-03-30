@@ -117,13 +117,12 @@ a:hover { text-decoration: underline; }
 
 #content { margin-bottom: 20px; padding: 25px; width: 634px; }
 
-/* h2 image-text replacements for each page */
-.page-intro #content h2,
-.page-growing-up #content h2    { background: url('images/txtGrowingUp.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
-.page-introduction #content h2  { background: url('images/introduction.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
-.page-becoming #content h2      { background: url('images/becoming-a-writer.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
-.page-family #content h2        { background: url('images/my-family.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
-.page-travel #content h2        { background: url('images/travel-adventures.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+/* h2 image-text replacements for each page — selectors match body class on each HTML file */
+.page-id-44 #content h2  { background: url('images/introduction.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.page-id-46 #content h2  { background: url('images/txtGrowingUp.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.page-id-48 #content h2  { background: url('images/becoming-a-writer.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.page-id-50 #content h2  { background: url('images/my-family.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.page-id-52 #content h2  { background: url('images/travel-adventures.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
 
 /* Books category h2s */
 .books-current h2       { background: url('images/txtCurrentlyAvailable.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
@@ -136,12 +135,10 @@ a:hover { text-decoration: underline; }
 .books-other h2         { background: url('images/other-titles.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
 
 /* Teachers h2s */
-.page-welcome-note #content h2      { background: url('images/welcome-note.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
-.page-school-visits #content h2     { background: url('images/school-visits.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
-.page-praise #content h2            { background: url('images/praise-for-school-visits.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
-.page-awards #content h2            { background: url('images/awards-honors.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
-.page-artists #content h2           { background: url('images/meet-the-artists.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
-.page-holidays #content h2          { background: url('images/more-about-holidays.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.page-id-98 #content h2  { background: url('images/welcome-note.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.page-id-99 #content h2  { background: url('images/school-visits.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.page-id-100 #content h2 { background: url('images/praise-for-school-visits.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.page-id-101 #content h2 { background: url('images/awards-honors.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
 
 /* Books listing style */
 .post { clear: both; margin-bottom: 35px; border-bottom: 2px solid #ffffff; padding-bottom: 10px; }
