@@ -1,0 +1,178 @@
+/*
+Theme Name: Ann McGovern
+Description: Plain HTML/CSS faithful clone of annmcgovern.com
+Original theme coded by Amber Weinberg for Authors On The Web
+*/
+
+/*****CSS RESET*******/
+html,body,div,span,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,code,em,img,small,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,ol,ul,li{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
+body{line-height:1;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+
+/****BODY STYLES********/
+body { background: url('images/bkg.jpg') #FFF; color: #333; font: 16px/21px Arial, Helvetica, sans-serif; margin: 0 auto; width: 960px; }
+p { padding-bottom: 15px; }
+h1 a { background: url('images/logoHome.png') no-repeat; float: left; height: 95px; text-indent: -10000px; width: 460px; }
+h2 { color: #da2752; font-size: 24px; padding: 15px 0 15px 0; }
+h3 { font-size: 24px; padding-bottom: 28px; }
+a { color: #ec6b00; font-weight: bold; text-decoration: none; }
+a:hover { text-decoration: underline; }
+#container { background: #fff; -moz-box-shadow: 0 0 12px rgba(0,0,0,.4); -webkit-box-shadow: 0 0 12px rgba(0,0,0,.4); box-shadow: 0 0 12px rgba(0,0,0,.4); float: left; width: 100%; }
+
+/****HEADER STYLES*******/
+#topBar { background: #4a2748; color: #fff; float: left; font-size: 13px; height: 40px; padding: 0 20px; width: 920px; }
+#topBar p { float: left; padding-top: 10px; }
+#topBar .social { float: right; padding-top: 5px; }
+#topBar .social a { font-weight: normal; }
+#topBar .social img { vertical-align: middle; }
+
+#header { background: url('images/heroBkg.jpg') no-repeat left top; color: #fff; float: left; font: bold 24px Tahoma, Arial, sans-serif; height: 159px; line-height: 36px; padding: 30px 0 0 22px; width: 938px; }
+.home #header { height: 393px; }
+#header p { float: left; width: 426px; font-size: 13px; font-weight: normal; line-height: 18px; }
+#header p a { color: #e72f5c; }
+#header .wp-post-image { float: left; margin-right: 20px; border: none; box-shadow: none; }
+
+/*****NAV STYLES*******/
+#menu-main { background: url('images/navBkg.jpg') repeat-x; float: left; height: 51px; margin: 13px 0 0 -22px; width: 960px; list-style: none; }
+.home #menu-main { margin-top: 29px; }
+#menu-main li, #menu-main li a { float: left; list-style: none; position: relative; }
+#menu-main > li > a { background: url('images/nav.jpg') no-repeat 0 0; height: 51px; margin-left: 32px; text-indent: -100000px; display: block; }
+
+/* Nav item widths & positions */
+#menu-main li.item-home > a        { background-position: 0 0;      width: 62px; }
+#menu-main li.item-about > a       { background-position: -97px 0;  width: 113px; }
+#menu-main li.item-books > a       { background-position: -238px 0; width: 73px; }
+#menu-main li.item-photos > a      { background-position: -338px 0; width: 73px; }
+#menu-main li.item-teachers > a    { background-position: -448px 0; width: 238px; }
+#menu-main li.item-qa > a          { background-position: -719px 0; width: 58px; }
+#menu-main li.item-contact > a     { background-position: -802px 0; width: 87px; }
+
+/* Nav hover & active states */
+#menu-main > li > a:hover                  { background-position: 0 -51px; }
+#menu-main li.item-home > a:hover,
+#menu-main li.item-home.current > a        { background-position: 0 -51px; }
+#menu-main li.item-about > a:hover,
+#menu-main li.item-about.current > a       { background-position: -97px -51px; }
+#menu-main li.item-books > a:hover,
+#menu-main li.item-books.current > a       { background-position: -238px -51px; }
+#menu-main li.item-photos > a:hover,
+#menu-main li.item-photos.current > a      { background-position: -338px -51px; }
+#menu-main li.item-teachers > a:hover,
+#menu-main li.item-teachers.current > a    { background-position: -448px -51px; }
+#menu-main li.item-qa > a:hover,
+#menu-main li.item-qa.current > a          { background-position: -719px -51px; }
+#menu-main li.item-contact > a:hover,
+#menu-main li.item-contact.current > a     { background-position: -802px -51px; }
+
+/* Dropdowns */
+#menu-main ul.sub-menu { background: url('images/navDropBkg.jpg') repeat-x top #cf2b53; display: none; left: 0; padding: 15px; position: absolute; top: 51px; width: 165px; list-style: none; z-index: 100; }
+#menu-main ul.sub-menu li, #menu-main ul.sub-menu a { display: block; float: none; line-height: 30px; }
+#menu-main ul.sub-menu a { color: #fff; font-size: 18px; font-weight: normal; text-decoration: none; }
+#menu-main ul.sub-menu a:hover { text-decoration: underline; }
+#menu-main li:hover ul.sub-menu { display: block; }
+
+/*****FOOTER STYLES*******/
+#footer { background: url('images/footerBkg.jpg') repeat-x; color: #fff; float: left; font: 13px Helvetica, Arial, sans-serif; height: 32px; padding: 20px 20px 0; width: 920px; }
+#footer span { float: right; }
+#footer a { color: #fff; font-weight: normal; }
+
+/*****HOME CONTENT STYLES*******/
+.wp-post-image, #aboutBooks .title + a img, #teachers .title + a, #featQues a img { border: 8px solid #fff; -moz-box-shadow: 0 0 8px rgba(0,0,0,.4); -webkit-box-shadow: 0 0 8px rgba(0,0,0,.4); box-shadow: 0 0 8px rgba(0,0,0,.4); float: left; margin-right: 15px; }
+
+.module { background: #fff7e9; float: left; margin: 20px 0 0 20px; padding: 15px; }
+.module img { margin-top: 5px; }
+
+#favPhotos { height: 361px; width: 259px; }
+#favPhotos p { clear: both; padding: 10px 0 0; }
+
+#aboutBooks { height: 361px; width: 578px; }
+#aboutBooks .title { display: block; }
+#aboutBooks .title + a img { margin-bottom: 30px; }
+
+#featQues, #teachers { height: 157px; width: 419px; }
+#featQues a img { clear: left; }
+#featQues a img, #teachers .wp-post-image { border-width: 5px; margin-right: 13px; }
+#featQues img, #teachers img { margin-top: 0; }
+#featQues .title { float: none; }
+#featQues p { padding-bottom: 0; }
+
+#teachers { padding-right: 0; width: 434px; }
+#teachers .title { float: left; }
+
+#bookSlider { width: 889px; padding-bottom: 15px; }
+#bookSlider .wp-post-image { border: none; box-shadow: none; margin-right: 13px; }
+#bookSlider ul { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; padding: 5px 0 5px 6px; }
+#bookSlider ul li { display: contents; }
+#bookSlider ul li a img { border: 8px solid #fff; box-shadow: 0 0 8px rgba(0,0,0,.4); height: 185px; width: auto; }
+
+/*****SUB CONTENT STYLES - SIDEBAR *******/
+#sideMenu { width: 178px; }
+#sideMenu li { display: block; list-style: none; padding-bottom: 5px; }
+#sideMenu .title { margin-bottom: 5px; padding-bottom: 0; }
+#sideMenu .title img { margin-top: 0; }
+#sideMenu a { color: #ff8c2d; font-size: 18px; font-weight: bold; }
+#sideMenu a:hover, #sideMenu .current_page_item a, #sideMenu .current-cat a { text-decoration: underline; }
+
+#content { margin-bottom: 20px; padding: 25px; width: 634px; }
+
+/* h2 image-text replacements for each page — selectors match body class on each HTML file */
+.page-id-44 #content h2  { background: url('images/introduction.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.page-id-46 #content h2  { background: url('images/txtGrowingUp.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.page-id-48 #content h2  { background: url('images/becoming-a-writer.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.page-id-50 #content h2  { background: url('images/my-family.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.page-id-52 #content h2  { background: url('images/travel-adventures.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+
+/* Books category h2s */
+.books-current h2       { background: url('images/txtCurrentlyAvailable.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.books-picture h2       { background: url('images/picture-books.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.books-bios h2          { background: url('images/biographies.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.books-travel h2        { background: url('images/travel-adventures.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.books-animals h2       { background: url('images/animals.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.books-sea h2           { background: url('images/under-the-sea.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.books-ifyou h2         { background: url('images/if-you-series.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.books-other h2         { background: url('images/other-titles.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+
+/* Teachers h2s */
+.page-id-98 #content h2  { background: url('images/welcome-note.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.page-id-99 #content h2  { background: url('images/school-visits.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.page-id-100 #content h2 { background: url('images/praise-for-school-visits.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.page-id-101 #content h2 { background: url('images/awards-honors.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+
+/* Books listing style */
+.post { clear: both; margin-bottom: 35px; border-bottom: 2px solid #ffffff; padding-bottom: 10px; }
+.post img { float: left; margin-right: 22px; width: 184px; }
+.post h3 { font-size: 18px; padding-bottom: 10px; color: #da2752; }
+.post h3 a { color: #da2752; }
+
+/* Image caption */
+.wp-caption { background: #fff; font-size: 12px; margin-bottom: 15px !important; }
+.wp-caption p { padding: 0; }
+.wp-caption-text { font-size: 12px; padding: 3px 5px; }
+
+/* Image alignment */
+.alignleft { float: left; margin-right: 15px; margin-bottom: 10px; border: 5px solid #fff; box-shadow: 0 0 8px rgba(0,0,0,.4); }
+.alignright { float: right; margin-left: 15px; margin-bottom: 10px; border: 5px solid #fff; box-shadow: 0 0 8px rgba(0,0,0,.4); }
+.aligncenter { display: block; margin: 0 auto 15px; border: 5px solid #fff; box-shadow: 0 0 8px rgba(0,0,0,.4); }
+
+/* Contact form */
+.contact-form label { font-weight: bold; display: block; margin-bottom: 4px; }
+.contact-form input[type=text],
+.contact-form input[type=email],
+.contact-form textarea { border: 1px solid #000; padding: 8px; width: 328px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
+.contact-form textarea { width: 609px; height: 120px; resize: vertical; }
+.contact-form input[type=submit] { background: url('images/btnSend.jpg') no-repeat; border: none; cursor: pointer; float: left; height: 38px; text-indent: -100000px; width: 92px; margin-top: 8px; }
+.contact-form .form-row { margin-bottom: 12px; }
+
+/* Clearfix */
+.clearfix::after { content: ''; display: table; clear: both; }
+
+/* Photo gallery grid */
+.photo-galleries { overflow: hidden; }
+.photo-galleries .post.wp-caption { float: left; width: 295px; margin-right: 20px; margin-bottom: 20px; border-bottom: none; padding-bottom: 0; }
+.photo-galleries .post.wp-caption img { float: none; width: 290px; margin-right: 0; }
+.photo-galleries .post.wp-caption p { font-size: 13px; padding-top: 5px; }
+
+/* Q&A styling */
+.post h3 { font-size: 16px; font-weight: bold; color: #da2752; padding-bottom: 6px; }
