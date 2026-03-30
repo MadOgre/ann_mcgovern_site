@@ -167,3 +167,12 @@ a:hover { text-decoration: underline; }
 
 /* Clearfix */
 .clearfix::after { content: ''; display: table; clear: both; }
+
+/* Photo gallery grid */
+.photo-galleries { overflow: hidden; }
+.photo-galleries .post.wp-caption { float: left; width: 295px; margin-right: 20px; margin-bottom: 20px; border-bottom: none; padding-bottom: 0; }
+.photo-galleries .post.wp-caption img { float: none; width: 290px; margin-right: 0; }
+.photo-galleries .post.wp-caption p { font-size: 13px; padding-top: 5px; }
+
+/* Q&A styling */
+.post h3 { font-size: 16px; font-weight: bold; color: #da2752; padding-bottom: 6px; }
