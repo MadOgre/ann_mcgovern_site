@@ -1,814 +1,172 @@
-/* Ann McGovern Website - Main Stylesheet */
-
-/* ===== Reset & Base ===== */
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    font-size: 16px;
-}
-
-body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #333333;
-    background-color: #ffffff;
-    line-height: 1.6;
-}
-
-a {
-    color: #4a7c9e;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #2c5f7e;
-    text-decoration: underline;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-ul {
-    list-style: none;
-}
-
-/* ===== Page Wrapper ===== */
-#page-wrapper {
-    max-width: 960px;
-    margin: 0 auto;
-    background: #ffffff;
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0,0,0,0.08);
-}
-
-/* ===== Header ===== */
-#header {
-    background-color: #2e6da4;
-    background-image: linear-gradient(to bottom, #3a7fbf, #2e6da4);
-    color: #ffffff;
-    padding: 0;
-    position: relative;
-}
-
-#header-inner {
-    display: flex;
-    align-items: center;
-    padding: 20px 30px;
-}
-
-#site-logo {
-    flex: 0 0 auto;
-}
-
-#site-logo img,
-#site-logo .logo-placeholder {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    border: 3px solid rgba(255,255,255,0.5);
-    object-fit: cover;
-}
-
-#site-logo .logo-placeholder {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255,255,255,0.15);
-    color: rgba(255,255,255,0.9);
-    font-family: Georgia, serif;
-    font-size: 1.8em;
-    font-weight: bold;
-}
-
-#site-title {
-    flex: 1;
-    padding-left: 20px;
-}
-
-#site-title h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2.4em;
-    font-weight: normal;
-    letter-spacing: 2px;
-    color: #ffffff;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-    margin-bottom: 4px;
-}
-
-#site-title .tagline {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.9em;
-    color: rgba(255,255,255,0.85);
-    font-style: italic;
-    letter-spacing: 1px;
-}
-
-/* Header ocean wave decoration */
-#header::after {
-    content: '';
-    display: block;
-    height: 6px;
-    background: linear-gradient(to right, #f0a500, #e8c26e, #f0a500);
-}
-
-/* ===== Navigation ===== */
-#navigation {
-    background-color: #1a4e78;
-}
-
-#navigation ul {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 20px;
-}
-
-#navigation ul li a {
-    display: block;
-    color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.88em;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 12px 16px;
-    text-decoration: none;
-    border-right: 1px solid rgba(255,255,255,0.15);
-    transition: background-color 0.2s;
-}
-
-#navigation ul li a:hover,
-#navigation ul li a.active {
-    background-color: #2e6da4;
-    text-decoration: none;
-    color: #f0c040;
-}
-
-#navigation ul li:first-child a {
-    border-left: 1px solid rgba(255,255,255,0.15);
-}
-
-/* ===== Main Content Area ===== */
-#content-area {
-    display: flex;
-    padding: 0;
-}
-
-/* ===== Sidebar ===== */
-#sidebar {
-    flex: 0 0 200px;
-    background-color: #f5f0e8;
-    border-right: 1px solid #d9d2c5;
-    padding: 20px 15px;
-    min-height: 500px;
-}
-
-#sidebar .sidebar-section {
-    margin-bottom: 25px;
-}
-
-#sidebar .sidebar-section h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.75em;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: #7a6a4f;
-    border-bottom: 2px solid #c8b89a;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-}
-
-#sidebar .sidebar-section ul li {
-    border-bottom: 1px dotted #c8b89a;
-}
-
-#sidebar .sidebar-section ul li a {
-    display: block;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.82em;
-    color: #4a7c9e;
-    padding: 6px 2px;
-    text-decoration: none;
-}
-
-#sidebar .sidebar-section ul li a:hover {
-    color: #1a4e78;
-    text-decoration: underline;
-}
-
-#sidebar .author-photo-box {
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-#sidebar .author-photo-box img,
-#sidebar .author-photo-box .author-photo-placeholder {
-    width: 140px;
-    height: 140px;
-    border: 3px solid #c8b89a;
-    margin: 0 auto 8px;
-    object-fit: cover;
-    display: block;
-}
-
-#sidebar .author-photo-box .author-photo-placeholder {
-    background-color: #2e6da4;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgba(255,255,255,0.9);
-    font-family: Georgia, serif;
-    font-size: 2.2em;
-    font-weight: bold;
-}
-
-#sidebar .author-photo-box p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.75em;
-    color: #7a6a4f;
-    font-style: italic;
-}
-
-/* ===== Main Content ===== */
-#main-content {
-    flex: 1;
-    padding: 25px 30px;
-    min-width: 0;
-}
-
-/* Page title */
-#main-content .page-title {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.8em;
-    color: #2e6da4;
-    border-bottom: 2px solid #e8c26e;
-    padding-bottom: 8px;
-    margin-bottom: 20px;
-}
-
-/* ===== Home Page ===== */
-.welcome-section {
-    margin-bottom: 30px;
-}
-
-.welcome-section p {
-    font-size: 1.05em;
-    line-height: 1.75;
-    margin-bottom: 15px;
-    color: #444;
-}
-
-.welcome-section .welcome-image {
-    float: right;
-    margin: 0 0 15px 20px;
-    text-align: center;
-}
-
-.welcome-section .welcome-image img {
-    width: 200px;
-    border: 3px solid #c8b89a;
-}
-
-.welcome-section .welcome-image .caption {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.75em;
-    color: #7a6a4f;
-    font-style: italic;
-    margin-top: 5px;
-}
-
-/* ===== Featured Books Section ===== */
-.section-title {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.3em;
-    color: #1a4e78;
-    margin: 25px 0 15px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #ddd;
-}
-
-.featured-books {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-bottom: 30px;
-}
-
-.book-item {
-    flex: 0 0 calc(33.333% - 14px);
-    text-align: center;
-}
-
-.book-item .book-cover {
-    width: 100%;
-    max-width: 140px;
-    height: 180px;
-    margin: 0 auto 8px;
-    border: 2px solid #c8b89a;
-    object-fit: cover;
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.15);
-}
-
-.book-item .book-cover-placeholder {
-    width: 120px;
-    height: 160px;
-    margin: 0 auto 8px;
-    border: 2px solid #c8b89a;
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.15);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Georgia, serif;
-    font-size: 0.75em;
-    text-align: center;
-    padding: 8px;
-    line-height: 1.3;
-}
-
-.book-item .book-title {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.8em;
-    color: #333;
-    font-weight: bold;
-    margin-bottom: 3px;
-}
-
-.book-item .book-year {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.72em;
-    color: #888;
-}
-
-/* ===== Books Page ===== */
-.books-category {
-    margin-bottom: 35px;
-}
-
-.books-category h2 {
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 1.3em;
-    color: #2e6da4;
-    background-color: #eaf2f8;
-    padding: 8px 12px;
-    border-left: 4px solid #2e6da4;
-    margin-bottom: 15px;
-}
-
-.books-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.book-card {
-    flex: 0 0 calc(25% - 16px);
-    text-align: center;
-}
-
-.book-card .cover {
-    width: 100px;
-    height: 135px;
-    margin: 0 auto 8px;
-    border: 2px solid #c8b89a;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.12);
-    object-fit: cover;
-}
-
-.book-card .cover-placeholder {
-    width: 100px;
-    height: 135px;
-    margin: 0 auto 8px;
-    border: 2px solid #c8b89a;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.12);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Georgia, serif;
-    font-size: 0.68em;
-    text-align: center;
-    padding: 6px;
-    line-height: 1.3;
-    color: #fff;
-}
-
-.book-card .book-name {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.75em;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 2px;
-}
-
-.book-card .book-pub-year {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.68em;
-    color: #999;
-}
-
-/* ===== About Page ===== */
-.about-layout {
-    display: flex;
-    gap: 25px;
-    margin-bottom: 25px;
-}
-
-.about-photo-col {
-    flex: 0 0 180px;
-    text-align: center;
-}
-
-.about-photo-col img,
-.about-photo-col .about-photo-placeholder {
-    width: 170px;
-    height: 200px;
-    border: 3px solid #c8b89a;
-    margin-bottom: 8px;
-    object-fit: cover;
-    display: block;
-}
-
-.about-photo-col .about-photo-placeholder {
-    background-color: #2e6da4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgba(255,255,255,0.9);
-    font-family: Georgia, serif;
-    font-size: 3em;
-    font-weight: bold;
-    border-radius: 4px;
-}
-
-.about-photo-col .photo-caption {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.72em;
-    color: #7a6a4f;
-    font-style: italic;
-}
-
-.about-text-col {
-    flex: 1;
-}
-
-.about-text-col p {
-    font-size: 1em;
-    line-height: 1.75;
-    margin-bottom: 15px;
-    color: #444;
-}
-
-.about-text-col h2 {
-    font-family: Georgia, serif;
-    font-size: 1.2em;
-    color: #2e6da4;
-    margin: 20px 0 10px;
-    padding-bottom: 4px;
-    border-bottom: 1px solid #ddd;
-}
-
-/* ===== Schools Page ===== */.schools-info-box {
-    background: #eaf2f8;
-    border: 1px solid #b8d4e8;
-    border-left: 4px solid #2e6da4;
-    padding: 15px 20px;
-    margin-bottom: 20px;
-    border-radius: 2px;
-}
-
-.schools-info-box h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.95em;
-    color: #1a4e78;
-    margin-bottom: 8px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.schools-info-box p,
-.schools-info-box ul {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.9em;
-    color: #444;
-    line-height: 1.6;
-}
-
-.schools-info-box ul {
-    list-style: disc;
-    padding-left: 20px;
-    margin-top: 5px;
-}
-
-.schools-info-box ul li {
-    margin-bottom: 4px;
-    border-bottom: none;
-}
-
-.programs-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.88em;
-}
-
-.programs-table th {
-    background-color: #2e6da4;
-    color: #ffffff;
-    text-align: left;
-    padding: 8px 12px;
-}
-
-.programs-table td {
-    padding: 8px 12px;
-    border-bottom: 1px solid #ddd;
-    vertical-align: top;
-}
-
-.programs-table tr:nth-child(even) td {
-    background-color: #f5f5f5;
-}
-
-/* ===== Contact Page ===== */.contact-form {
-    max-width: 550px;
-}
-
-.contact-form .form-group {
-    margin-bottom: 16px;
-}
-
-.contact-form label {
-    display: block;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.85em;
-    font-weight: bold;
-    color: #555;
-    margin-bottom: 4px;
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-    width: 100%;
-    padding: 8px 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.9em;
-    color: #333;
-    background: #fafafa;
-}
-
-.contact-form input[type="text"]:focus,
-.contact-form input[type="email"]:focus,
-.contact-form textarea:focus {
-    border-color: #4a7c9e;
-    outline: none;
-    background: #fff;
-}
-
-.contact-form textarea {
-    height: 120px;
-    resize: vertical;
-}
-
-.contact-form .submit-btn {
-    background-color: #2e6da4;
-    color: #ffffff;
-    border: none;
-    padding: 10px 28px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.9em;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 3px;
-    letter-spacing: 0.5px;
-}
-
-.contact-form .submit-btn:hover {
-    background-color: #1a4e78;
-}
-
-.contact-address {
-    margin-top: 30px;
-    padding: 15px 20px;
-    background: #f5f0e8;
-    border: 1px solid #d9d2c5;
-    border-radius: 3px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.88em;
-    color: #555;
-    line-height: 1.7;
-}
-
-.contact-address strong {
-    display: block;
-    color: #333;
-    margin-bottom: 5px;
-}
-
-/* ===== Footer ===== */
-#footer {
-    background-color: #1a4e78;
-    color: rgba(255,255,255,0.75);
-    padding: 15px 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.78em;
-    text-align: center;
-    border-top: 4px solid #e8c26e;
-}
-
-#footer a {
-    color: rgba(255,255,255,0.85);
-    text-decoration: none;
-}
-
-#footer a:hover {
-    text-decoration: underline;
-    color: #ffffff;
-}
-
-#footer .footer-links {
-    margin-bottom: 6px;
-}
-
-#footer .footer-links a {
-    padding: 0 8px;
-    border-right: 1px solid rgba(255,255,255,0.3);
-}
-
-#footer .footer-links a:last-child {
-    border-right: none;
-}
-
-/* ===== Page Intro Text ===== */
-.page-intro {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.92em;
-    color: #555;
-    margin-bottom: 20px;
-    line-height: 1.7;
-}
-
-/* ===== Welcome Image Book Cover ===== */
-.welcome-book-cover {
-    width: 140px;
-    height: 185px;
-    border: 3px solid #c8b89a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Georgia, serif;
-    font-size: 0.85em;
-    text-align: center;
-    padding: 10px;
-    line-height: 1.4;
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
-}
-
-/* ===== About Awards List ===== */
-.awards-list {
-    list-style: disc;
-    padding-left: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.92em;
-    line-height: 1.9;
-    color: #444;
-    margin-bottom: 20px;
-}
-.clearfix::after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
-.text-center {
-    text-align: center;
-}
-
-/* Required field indicator */
-.required {
-    color: #e63946;
-}
-
-/* ===== Quote / Highlight Box ===== */
-.highlight-box {
-    background: #fff8e8;
-    border: 1px solid #e8c26e;
-    border-left: 4px solid #f0a500;
-    padding: 12px 16px;
-    margin: 15px 0;
-    font-style: italic;
-    font-size: 0.95em;
-    color: #555;
-    line-height: 1.7;
-}
-
-.highlight-box cite {
-    display: block;
-    font-style: normal;
-    font-size: 0.85em;
-    color: #888;
-    margin-top: 6px;
-}
-
-/* ===== News/Updates Section ===== */
-.news-item {
-    border-bottom: 1px dotted #ccc;
-    padding: 12px 0;
-}
-
-.news-item:last-child {
-    border-bottom: none;
-}
-
-.news-item .news-date {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.75em;
-    color: #f0a500;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: 3px;
-}
-
-.news-item p {
-    font-size: 0.9em;
-    color: #555;
-    line-height: 1.6;
-}
-
-/* ===== Responsive ===== */
-@media screen and (max-width: 768px) {
-    #header-inner {
-        padding: 15px 20px;
-    }
-
-    #site-title h1 {
-        font-size: 1.7em;
-    }
-
-    #content-area {
-        flex-direction: column;
-    }
-
-    #sidebar {
-        flex: none;
-        border-right: none;
-        border-bottom: 1px solid #d9d2c5;
-        min-height: auto;
-    }
-
-    #main-content {
-        padding: 20px;
-    }
-
-    .featured-books {
-        gap: 15px;
-    }
-
-    .book-item {
-        flex: 0 0 calc(50% - 8px);
-    }
-
-    .books-grid {
-        gap: 15px;
-    }
-
-    .book-card {
-        flex: 0 0 calc(33.333% - 11px);
-    }
-
-    .about-layout {
-        flex-direction: column;
-    }
-
-    .about-photo-col {
-        flex: none;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    #site-title h1 {
-        font-size: 1.4em;
-    }
-
-    .book-item {
-        flex: 0 0 100%;
-    }
-
-    .book-card {
-        flex: 0 0 calc(50% - 8px);
-    }
-
-    #navigation ul li a {
-        padding: 10px 10px;
-        font-size: 0.78em;
-    }
-}
+/*
+Theme Name: Ann McGovern
+Description: Plain HTML/CSS faithful clone of annmcgovern.com
+Original theme coded by Amber Weinberg for Authors On The Web
+*/
+
+/*****CSS RESET*******/
+html,body,div,span,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,code,em,img,small,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,ol,ul,li{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
+body{line-height:1;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+
+/****BODY STYLES********/
+body { background: url('images/bkg.jpg') #FFF; color: #333; font: 16px/21px Arial, Helvetica, sans-serif; margin: 0 auto; width: 960px; }
+p { padding-bottom: 15px; }
+h1 a { background: url('images/logoHome.png') no-repeat; float: left; height: 95px; text-indent: -10000px; width: 460px; }
+h2 { color: #da2752; font-size: 24px; padding: 15px 0 15px 0; }
+h3 { font-size: 24px; padding-bottom: 28px; }
+a { color: #ec6b00; font-weight: bold; text-decoration: none; }
+a:hover { text-decoration: underline; }
+#container { background: #fff; -moz-box-shadow: 0 0 12px rgba(0,0,0,.4); -webkit-box-shadow: 0 0 12px rgba(0,0,0,.4); box-shadow: 0 0 12px rgba(0,0,0,.4); float: left; width: 100%; }
+
+/****HEADER STYLES*******/
+#topBar { background: #4a2748; color: #fff; float: left; font-size: 13px; height: 40px; padding: 0 20px; width: 920px; }
+#topBar p { float: left; padding-top: 10px; }
+#topBar .social { float: right; padding-top: 5px; }
+#topBar .social a { font-weight: normal; }
+#topBar .social img { vertical-align: middle; }
+
+#header { background: url('images/heroBkg.jpg') no-repeat left top; color: #fff; float: left; font: bold 24px Tahoma, Arial, sans-serif; height: 159px; line-height: 36px; padding: 30px 0 0 22px; width: 938px; }
+.home #header { height: 393px; }
+#header p { float: left; width: 426px; font-size: 13px; font-weight: normal; line-height: 18px; }
+#header p a { color: #e72f5c; }
+#header .wp-post-image { float: left; margin-right: 20px; border: none; box-shadow: none; }
+
+/*****NAV STYLES*******/
+#menu-main { background: url('images/navBkg.jpg') repeat-x; float: left; height: 51px; margin: 13px 0 0 -22px; width: 960px; list-style: none; }
+.home #menu-main { margin-top: 29px; }
+#menu-main li, #menu-main li a { float: left; list-style: none; position: relative; }
+#menu-main > li > a { background: url('images/nav.jpg') no-repeat 0 0; height: 51px; margin-left: 32px; text-indent: -100000px; display: block; }
+
+/* Nav item widths & positions */
+#menu-main li.item-home > a        { background-position: 0 0;      width: 62px; }
+#menu-main li.item-about > a       { background-position: -97px 0;  width: 113px; }
+#menu-main li.item-books > a       { background-position: -238px 0; width: 73px; }
+#menu-main li.item-photos > a      { background-position: -338px 0; width: 73px; }
+#menu-main li.item-teachers > a    { background-position: -448px 0; width: 238px; }
+#menu-main li.item-qa > a          { background-position: -719px 0; width: 58px; }
+#menu-main li.item-contact > a     { background-position: -802px 0; width: 87px; }
+
+/* Nav hover & active states */
+#menu-main > li > a:hover                  { background-position: 0 -51px; }
+#menu-main li.item-home > a:hover,
+#menu-main li.item-home.current > a        { background-position: 0 -51px; }
+#menu-main li.item-about > a:hover,
+#menu-main li.item-about.current > a       { background-position: -97px -51px; }
+#menu-main li.item-books > a:hover,
+#menu-main li.item-books.current > a       { background-position: -238px -51px; }
+#menu-main li.item-photos > a:hover,
+#menu-main li.item-photos.current > a      { background-position: -338px -51px; }
+#menu-main li.item-teachers > a:hover,
+#menu-main li.item-teachers.current > a    { background-position: -448px -51px; }
+#menu-main li.item-qa > a:hover,
+#menu-main li.item-qa.current > a          { background-position: -719px -51px; }
+#menu-main li.item-contact > a:hover,
+#menu-main li.item-contact.current > a     { background-position: -802px -51px; }
+
+/* Dropdowns */
+#menu-main ul.sub-menu { background: url('images/navDropBkg.jpg') repeat-x top #cf2b53; display: none; left: 0; padding: 15px; position: absolute; top: 51px; width: 165px; list-style: none; z-index: 100; }
+#menu-main ul.sub-menu li, #menu-main ul.sub-menu a { display: block; float: none; line-height: 30px; }
+#menu-main ul.sub-menu a { color: #fff; font-size: 18px; font-weight: normal; text-decoration: none; }
+#menu-main ul.sub-menu a:hover { text-decoration: underline; }
+#menu-main li:hover ul.sub-menu { display: block; }
+
+/*****FOOTER STYLES*******/
+#footer { background: url('images/footerBkg.jpg') repeat-x; color: #fff; float: left; font: 13px Helvetica, Arial, sans-serif; height: 32px; padding: 20px 20px 0; width: 920px; }
+#footer span { float: right; }
+#footer a { color: #fff; font-weight: normal; }
+
+/*****HOME CONTENT STYLES*******/
+.wp-post-image, #aboutBooks .title + a img, #teachers .title + a, #featQues a img { border: 8px solid #fff; -moz-box-shadow: 0 0 8px rgba(0,0,0,.4); -webkit-box-shadow: 0 0 8px rgba(0,0,0,.4); box-shadow: 0 0 8px rgba(0,0,0,.4); float: left; margin-right: 15px; }
+
+.module { background: #fff7e9; float: left; margin: 20px 0 0 20px; padding: 15px; }
+.module img { margin-top: 5px; }
+
+#favPhotos { height: 361px; width: 259px; }
+#favPhotos p { clear: both; padding: 10px 0 0; }
+
+#aboutBooks { height: 361px; width: 578px; }
+#aboutBooks .title { display: block; }
+#aboutBooks .title + a img { margin-bottom: 30px; }
+
+#featQues, #teachers { height: 157px; width: 419px; }
+#featQues a img { clear: left; }
+#featQues a img, #teachers .wp-post-image { border-width: 5px; margin-right: 13px; }
+#featQues img, #teachers img { margin-top: 0; }
+#featQues .title { float: none; }
+#featQues p { padding-bottom: 0; }
+
+#teachers { padding-right: 0; width: 434px; }
+#teachers .title { float: left; }
+
+#bookSlider { width: 889px; padding-bottom: 15px; }
+#bookSlider .wp-post-image { border: none; box-shadow: none; margin-right: 13px; }
+#bookSlider ul { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; padding: 5px 0 5px 6px; }
+#bookSlider ul li { display: contents; }
+#bookSlider ul li a img { border: 8px solid #fff; box-shadow: 0 0 8px rgba(0,0,0,.4); height: 185px; width: auto; }
+
+/*****SUB CONTENT STYLES - SIDEBAR *******/
+#sideMenu { width: 178px; }
+#sideMenu li { display: block; list-style: none; padding-bottom: 5px; }
+#sideMenu .title { margin-bottom: 5px; padding-bottom: 0; }
+#sideMenu .title img { margin-top: 0; }
+#sideMenu a { color: #ff8c2d; font-size: 18px; font-weight: bold; }
+#sideMenu a:hover, #sideMenu .current_page_item a, #sideMenu .current-cat a { text-decoration: underline; }
+
+#content { margin-bottom: 20px; padding: 25px; width: 634px; }
+
+/* h2 image-text replacements for each page */
+.page-intro #content h2,
+.page-growing-up #content h2    { background: url('images/txtGrowingUp.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.page-introduction #content h2  { background: url('images/introduction.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.page-becoming #content h2      { background: url('images/becoming-a-writer.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.page-family #content h2        { background: url('images/my-family.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.page-travel #content h2        { background: url('images/travel-adventures.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+
+/* Books category h2s */
+.books-current h2       { background: url('images/txtCurrentlyAvailable.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.books-picture h2       { background: url('images/picture-books.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.books-bios h2          { background: url('images/biographies.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.books-travel h2        { background: url('images/travel-adventures.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.books-animals h2       { background: url('images/animals.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.books-sea h2           { background: url('images/under-the-sea.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.books-ifyou h2         { background: url('images/if-you-series.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.books-other h2         { background: url('images/other-titles.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+
+/* Teachers h2s */
+.page-welcome-note #content h2      { background: url('images/welcome-note.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.page-school-visits #content h2     { background: url('images/school-visits.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.page-praise #content h2            { background: url('images/praise-for-school-visits.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.page-awards #content h2            { background: url('images/awards-honors.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.page-artists #content h2           { background: url('images/meet-the-artists.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+.page-holidays #content h2          { background: url('images/more-about-holidays.jpg') no-repeat center; height: 45px; margin-bottom: 35px; padding: 0; text-indent: -100000px; width: 100%; }
+
+/* Books listing style */
+.post { clear: both; margin-bottom: 35px; border-bottom: 2px solid #ffffff; padding-bottom: 10px; }
+.post img { float: left; margin-right: 22px; width: 184px; }
+.post h3 { font-size: 18px; padding-bottom: 10px; color: #da2752; }
+.post h3 a { color: #da2752; }
+
+/* Image caption */
+.wp-caption { background: #fff; font-size: 12px; margin-bottom: 15px !important; }
+.wp-caption p { padding: 0; }
+.wp-caption-text { font-size: 12px; padding: 3px 5px; }
+
+/* Image alignment */
+.alignleft { float: left; margin-right: 15px; margin-bottom: 10px; border: 5px solid #fff; box-shadow: 0 0 8px rgba(0,0,0,.4); }
+.alignright { float: right; margin-left: 15px; margin-bottom: 10px; border: 5px solid #fff; box-shadow: 0 0 8px rgba(0,0,0,.4); }
+.aligncenter { display: block; margin: 0 auto 15px; border: 5px solid #fff; box-shadow: 0 0 8px rgba(0,0,0,.4); }
+
+/* Contact form */
+.contact-form label { font-weight: bold; display: block; margin-bottom: 4px; }
+.contact-form input[type=text],
+.contact-form input[type=email],
+.contact-form textarea { border: 1px solid #000; padding: 8px; width: 328px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
+.contact-form textarea { width: 609px; height: 120px; resize: vertical; }
+.contact-form input[type=submit] { background: url('images/btnSend.jpg') no-repeat; border: none; cursor: pointer; float: left; height: 38px; text-indent: -100000px; width: 92px; margin-top: 8px; }
+.contact-form .form-row { margin-bottom: 12px; }
+
+/* Clearfix */
+.clearfix::after { content: ''; display: table; clear: both; }
